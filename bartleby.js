@@ -61,7 +61,7 @@ function checkTweetQueue(){
 
 }
 
-var twitter = new Twit({config.twitter});
+var twitter = new Twit(config.twitter);
 
 var stream = twitter.stream('statuses/filter', { track: '@bartleby_scrvnr' });
 
